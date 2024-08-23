@@ -5,7 +5,10 @@
   "scripts": {
     "start:main-dashboard": "cd main-dashboard && npm run dev",
     "start:sub-mdi": "cd sub-mdi && npm run start",
-    "start:all": "npx npm-run-all --parallel start:main-dashboard start:sub-mdi"
+    "start:all": "npx npm-run-all --parallel start:main-dashboard start:sub-mdi",
+    "install:main-dashboard": "cd main-dashboard && npm install",
+    "install:sub-mdi": "cd sub-mdi && npm install",
+    "install:all": "npx npm-run-all --parallel install:main-dashboard install:sub-mdi"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.5"
