@@ -1,0 +1,13 @@
+{
+  "name": "micro-frontend-lab",
+  "version": "1.0.0",
+  "description": "Micro-frontend project containing main-dashboard and sub-mdi",
+  "scripts": {
+    "start:main-dashboard": "cd main-dashboard && npm run dev",
+    "start:sub-mdi": "cd sub-mdi && npm run start",
+    "start:all": "npx npm-run-all --parallel start:main-dashboard start:sub-mdi"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

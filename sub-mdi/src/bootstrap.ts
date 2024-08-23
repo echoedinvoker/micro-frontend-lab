@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify'
-const mount = (el: any) => {
+const mount = (el: any, { vuetify }: any) => {
   const app = createApp(App)
   app.use(vuetify);
   app.mount(el);
@@ -11,7 +11,7 @@ const mount = (el: any) => {
 if (process.env.NODE_ENV === 'development') {
   const el = document.querySelector('#_mdi-dev-root');
   if (el) {
-    mount(el);
+    mount(el, { vuetify });
   }
 }
 
